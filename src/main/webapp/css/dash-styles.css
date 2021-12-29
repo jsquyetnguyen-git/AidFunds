@@ -1,0 +1,284 @@
+.container,
+.container-fluid,
+.navbar,
+#col-left,
+.modal-dialog {
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+}
+
+.logo {
+	width: 150px;
+}
+
+.logout {
+	position: absolute;
+	right: 10px;
+}
+
+.logout a {
+	text-decoration: none;
+	color: #808080;
+}
+
+#dash {
+	display: flex;
+}
+
+#dash #col-left {
+	flex-basis: 220px;
+	flex-shrink: 0;
+	transition: transform 0.15s ease-in-out;
+	z-index: 8;
+	transform: translateX(-220px);
+}
+
+#dash #col-right {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 0;
+	flex-grow: 1;
+	min-height: calc(100vh - 56px);
+	margin-left: -220px;
+	margin-top: 60px;
+}
+
+.sb-sidenav-toggled #dash #col-left {
+	transform: translateX(0);
+}
+
+.sb-sidenav-toggled #dash #col-right:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 7;
+	opacity: 0.5;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.box {
+	position: relative;
+	height: 90px;
+	border: 0.1rem solid rgb(185, 185, 185);
+	border-radius: 7px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.box1 {
+	border-left: 0.5rem solid rgb(122, 235, 46);
+}
+
+.box2 {
+	border-left: 0.5rem solid #FF8080;
+}
+
+.box3 {
+	border-left: 0.5rem solid #80FFF8;
+}
+
+.boxname {
+	color: #808080;
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+}
+
+.boxicon {
+	color: rgb(236, 236, 236);
+	font-size: 50px;
+	position: absolute;
+	right: 5px;
+	top: -0.5rem;
+}
+
+.boxvalue p {
+	font-size: 32px;
+	color: #808080;
+	position: absolute;
+	left: 22px;
+	top: -0.2rem;
+}
+
+.boxmoney {
+	font-size: 24px;
+	color: #808080;
+	position: absolute;
+	left: 10px;
+	top: 0.4rem;
+}
+
+.box4 {
+	border-left: 0.5rem solid #FFF380;
+}
+
+.table-heading {
+	position: relative;
+}
+
+tbody td{
+	font-size: 0.9rem;
+}
+
+.add-button {
+	position: absolute;
+	right: 0;
+	top: 0.5rem;
+}
+
+.camp-title {
+	width: 20rem;
+}
+
+.tbl {
+    margin-bottom: 7rem;
+}
+
+.fo {
+    position: absolute;
+    bottom: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+}
+
+.alert-trim {
+  display: inline-block;
+}
+
+@media ( min-width : 992px) {
+	#dash #col-left {
+		transform: translateX(0);
+	}
+	#dash #col-right {
+		margin-left: 0;
+		transition: margin 0.15s ease-in-out;
+	}
+	.sb-sidenav-toggled #dash #col-left {
+		transform: translateX(-220px);
+	}
+	.sb-sidenav-toggled #dash #col-right {
+		margin-left: -220px;
+	}
+	.sb-sidenav-toggled #dash #col-right:before {
+		display: none;
+	}
+	.box {
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+}
+
+@media ( min-width :1440px) {
+	.addcamp {
+		width: 80%;
+	}
+	.camp-title {
+		width: 50rem;
+	}
+}
+
+.sb-topnav {
+	z-index: 9;
+}
+
+#dash #col-left {
+	width: 220px;
+}
+
+#dash #col-left .sb-sidenav {
+	padding-top: 56px;
+}
+
+#dash #col-left .sb-sidenav .sb-sidenav-menu {
+	overflow-y: auto;
+}
+
+#dash #col-right {
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+.sb-nav-link-icon {
+	margin-right: 0.5rem;
+}
+
+.sb-topnav {
+	padding-left: 0;
+	height: 56px;
+	z-index: 9;
+}
+
+.sb-topnav .navbar-brand {
+	width: 220px;
+	margin: 0;
+}
+
+.sb-topnav.navbar-dark #sidebarToggle {
+	color: #808080;
+}
+
+.sb-sidenav {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex-wrap: nowrap;
+}
+
+.sb-sidenav .sb-sidenav-menu {
+	flex-grow: 1;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-heading {
+	padding: 1.75rem 1rem 0.75rem;
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .nav-link {
+	display: flex;
+	align-items: center;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	position: relative;
+}
+
+.sb-nav-link-icon {
+	font-size: 0.9rem;
+}
+
+.sb-sidenav .sb-sidenav-footer {
+	padding: 0.75rem;
+	flex-shrink: 0;
+}
+
+.sb-sidenav-dark, .sb-topnav {
+	background-color: #1c1c1c;
+	color: #808080;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
+	color: #808080;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link {
+	color: #808080;
+}
+
+.sb-nav-link-icon {
+	color: #808080;
+}
